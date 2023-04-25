@@ -253,7 +253,7 @@ export default {
         const Propertie = features.properties;
         if (Propertie) {
           const NewProp = {};
-          const lang = this.langZh ? 0 : 1;
+          const lang = this.langZh ? 0 : 1; // 0: CH, 1: EN
           Object.keys(this.langObj).map((langKey) => {
             if (langKey === "transport_rate") {
               NewProp[this.langObj[langKey][lang]] = `${(
